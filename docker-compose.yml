@@ -1,7 +1,7 @@
 services:
   app:
     build: ./infra/php
-    user: "1000:1000"
+    user: '1000:1000'
     working_dir: /data
     volumes:
       - ./src:/data
@@ -38,7 +38,7 @@ services:
     volumes:
       - db-store:/var/lib/mysql
     ports:
-      - 3306:3306
+      - 3307:3306
     environment:
       - MYSQL_DATABASE=${DB_DATABASE}
       - MYSQL_USER=${DB_USERNAME}
