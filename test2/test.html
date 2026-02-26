@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <form class="space-y-4">
+      <div>
+        <label class="block text-gray-700 font-bold mb-2">商品名</label>
+        <input
+          type="text"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="商品名を入力"
+        />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-bold mb-2">説明</label>
+        <textarea
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          rows="4"
+          placeholder="商品の説明を入力"
+        ></textarea>
+      </div>
+
+      <button
+        class="w-full bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600"
+      >
+        登録する
+      </button>
+    </form>
+  </body>
+</html>
